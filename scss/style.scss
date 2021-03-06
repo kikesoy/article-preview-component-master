@@ -408,6 +408,7 @@ body,html{
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     line-height: 1.5385;
+    color: $Very-Dark-Grayish-Blue;
 }
 
 h1{
@@ -417,7 +418,30 @@ h1{
 }
 
 p{
-    
+    margin:0;
+    margin-bottom: ( $spacer * 3 );
+}
+
+.btn--icon{
+    width: ( $spacer * 3.2);
+    height: ( $spacer * 3.2);
+    border: none 0;
+    border-radius: 50%;
+    background: {
+        color: $Light-Grayish-Blue;
+    };
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--bold{
+    font-weight: 700;
+}
+
+.text--light{
+    color: $Grayish-Blue;
 }
 
 .article{
@@ -472,10 +496,47 @@ p{
 
     }
 
+    &__content{
+        color: $Desaturated-Dark-Blue;
+    }
+
     &__footer{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
+        line-height: 1;
     }
+}
+
+.author {
+
+    &__picture{
+        flex: 0 0 ( $spacer * 4 );
+        overflow: hidden;
+        border-radius: 50%;
+    
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__info{
+        flex: auto;
+        padding: 0 ( $spacer * 1.6 );
+
+        p{
+            margin: 0;
+
+            &:first-child{
+                margin-bottom: ( $spacer * 0.8 );
+            }
+        }
+        
+    }
+}
+
+.share__block{
+    flex: 0 0 32px;
 }
