@@ -23,6 +23,7 @@
  html { 
   font-size: 62.5%;
   line-height: 62.5%;
+  height: 100%;
 } 
  
  body {
@@ -444,6 +445,16 @@ p{
     color: $Grayish-Blue;
 }
 
+.list--horizontal{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .article{
     &__body{
         height:100%;
@@ -451,16 +462,17 @@ p{
         background: {
             color: $Light-Grayish-Blue;
         };
-    }
-
-    &__container{
-        font-size: ( $spacer * 1.3);
-        height:100vh;
-        width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+    }
+
+    &__container{
+        font-size: ( $spacer * 1.3);
+        width: 327px;
+        position: relative;
+        
     }
 
     &__preview{
@@ -469,7 +481,7 @@ p{
         };
         overflow: hidden;
         border-radius: ( $spacer * 0.8 );
-        width: 327px;
+        
     }
 
     &__image{
@@ -537,6 +549,55 @@ p{
     }
 }
 
-.share__block{
+.share{
+  
+
+  &__block{
     flex: 0 0 32px;
+  }
+
+  &__container{
+    position: absolute;
+    overflow: hidden;
+    background: $Very-Dark-Grayish-Blue;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    padding: 16px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius:  ( $spacer * 0.8 );
+    border-bottom-right-radius:  ( $spacer * 0.8 );
+    transition: all ease-out .25s;
+  }
+
+  &__options{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1;
+  }
+
+  &__text{
+    font-size: ( $spacer * 1.3 );
+    text-transform: uppercase;
+    color: $Light-Grayish-Blue;
+    margin-right: 22px;
+
+  }
+
+  &__list{
+
+    li{
+      margin-right: ( $spacer * 1.6 );
+    }
+  }
+}
+
+.active{
+  width: 100%;
+  padding: 16px 32px;
 }

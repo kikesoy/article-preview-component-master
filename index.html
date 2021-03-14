@@ -43,20 +43,48 @@
             <p class="text--light">28 Jun 2020</p>
           </div>
           <div class="share__block">
-            <button class="btn--icon">
+            <button class="btn--icon" onclick="toggleSharing()">
               <img src="./images/icon-share.svg" alt="">
             </button>
           </div>
         </footer>
       </section>
     </article>
+
+    <!-- SHARE STATE -->
+    <section id="share" class="share__container">
+      <div class="share__options">
+        <div class="share__text">
+          Share
+        </div>
+        <ul class="share__list list--horizontal">
+          <li class="list__item"><a href="" class="icon__social"><img src="./images/icon-facebook.svg" alt="" class="icon__img"></a></li>
+          <li class="list__item"><a href="" class="icon__social"><img src="./images/icon-twitter.svg" alt="" class="icon__img"></a></li>
+          <li class="list__item"><a href="" class="icon__social"><img src="./images/icon-pinterest.svg" alt="" class="icon__img"></a></li>
+        </ul>
+      </div>
+      <div class="share__block">
+        <button class="btn--icon" onclick="toggleSharing()">
+          <img src="./images/icon-share.svg" alt="">
+        </button>
+      </div>
+    </section>
   </div>
 
-  Share
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+
+  function toggleSharing() {
+    var element = document.getElementById("share");
+    element.classList.toggle("active");
+  }
+
+  </script>
 </body>
 </html>
