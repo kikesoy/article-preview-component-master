@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { position:fixed;bottom:8px;font-size: 11px; text-align: center;z-index: 100; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -53,7 +53,7 @@
 
     <!-- SHARE STATE -->
     <section id="share" class="share__container">
-      <div class="share__options">
+      <section class="share__options">
         <div class="share__text">
           Share
         </div>
@@ -62,12 +62,12 @@
           <li class="list__item"><a href="" class="icon__social"><img src="./images/icon-twitter.svg" alt="" class="icon__img"></a></li>
           <li class="list__item"><a href="" class="icon__social"><img src="./images/icon-pinterest.svg" alt="" class="icon__img"></a></li>
         </ul>
-      </div>
-      <div class="share__block">
+      </section>
+      <section class="share__block desktop--hide">
         <button class="btn--icon" onclick="toggleSharing()">
           <img src="./images/icon-share.svg" alt="">
         </button>
-      </div>
+      </section>
     </section>
   </div>
 
@@ -78,13 +78,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <script>
-
-  function toggleSharing() {
-    var element = document.getElementById("share");
-    element.classList.toggle("active");
-  }
-
-  </script>
+<script src="./js/scripts.js"></script>
 </body>
 </html>
