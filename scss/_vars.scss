@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+// VARS
+
+// --COLORES
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(212, 23%, 69%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+$white: #fff;
+
+// --SIZES
+$spacer: 1rem;
+$radius-regular: ( $spacer * .8 );
+$radius-round: 50%;
+
+// --BREAKPOINTS
+$large: 1140px;
+$medium: 767px;
+$small: 480px;

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+html { 
+ font-size: 62.5%;
+ line-height: 62.5%;
+ height: 100%;
+} 
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+ul,
+li,
+img,
+header,
+article,
+section,
+main,
+footer,
+button{
+ margin: 0;
+ padding: 0;
+ border: 0 none;
+}
+
+header,
+article,
+section,
+main,
+footer{
+ display: block;
+}
+
+button{
+ cursor: pointer;
+}
+
+img{
+    display: block;
+}
