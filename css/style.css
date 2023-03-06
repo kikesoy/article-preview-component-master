@@ -56,7 +56,8 @@ img {
   display: block;
 }
 
-body, html {
+body,
+html {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   line-height: 1.5385;
@@ -198,6 +199,12 @@ p {
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   transition: all ease-out 0.25s;
+  opacity: 0;
+}
+.share__container.active {
+  opacity: 1;
+  width: 100%;
+  padding: 16px 32px;
 }
 .share__options {
   display: flex;
@@ -216,12 +223,16 @@ p {
   margin-right: 1.6rem;
 }
 
-.active {
-  width: 100%;
-  padding: 16px 32px;
-}
-
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+
   .desktop--hide {
     display: none;
   }
@@ -231,6 +242,9 @@ p {
   }
   .article__container {
     width: 730px;
+  }
+  .article__text {
+    padding: 40px 40px 32px 40px;
   }
   .article__image {
     flex: 0 0 285px;
@@ -246,8 +260,8 @@ p {
     position: absolute;
     overflow: unset;
     left: unset;
-    bottom: 96px;
-    right: -66px;
+    bottom: 106px;
+    right: -58px;
     width: unset;
     padding: 18px 36px;
     border-radius: 0.8rem;
@@ -262,6 +276,10 @@ p {
     background-color: inherit;
     bottom: -9px;
     left: 50%;
+  }
+  .share__container.active {
+    width: unset;
+    bottom: 96px;
   }
   .share__options {
     display: flex;
